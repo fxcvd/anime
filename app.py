@@ -11,6 +11,12 @@ def _index():
     return render_template("index.html", photo=photo, id=id)
 
 
+@app.route("/api")
+def _api():
+    photo = random.choice(os.listdir("static"))
+    return render_template("api.html", photo=photo)
+
+
 @app.route("/donate")
 def _donate():
     return redirect("https://www.tinkoff.ru/rm/ivanov.vladislav82/fLBa057505")
