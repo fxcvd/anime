@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Generator | {{id}}</title>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="title">Anime Generator</div>
+            <div class="author">by rzet</div>
+            <div class="photo">
+                <img src="/static/{{photo}}" alt="anime_pic">
+            </div>
+            <a href="" class="btn">regenerate</a>
+            <a href="donate" style='margin-top: 10px;' class="btn">donate</a>
+        </div>
+    </main>
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: #262527;
+        }
+
+        main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title{
+            color: #ffffff;
+            font-size: 30px;
+        }
+
+        .author{
+            color: #d8d8d8;
+        }
+
+        .photo{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        img{
+            width: 400px;
+            border: 10px solid #ffffff;
+            border-radius: 5px;
+        }
+
+        .btn{
+            background-color: #ffffff;
+            outline: none;
+            text-decoration: none;
+            font-size: 22px;
+            text-align: center;
+            color: #e4b357;
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        @media (orientation: portrait) {
+            img{
+                width: 320px;
+            }
+        }
+
+        
+    </style>
+
+    <script>
+        console.log("PhotoID: {{id}}")
+        console.log("PATH: /static/{{photo}}")
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</body>
+</html>
